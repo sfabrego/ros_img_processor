@@ -3,6 +3,7 @@
 
 //std C++
 #include <iostream>
+#include <sstream>
 
 //ROS headers for image I/O
 #include <image_transport/image_transport.h>
@@ -35,9 +36,9 @@ class RosImgProcessorNode
         cv_bridge::CvImagePtr cv_img_ptr_in_;
         cv_bridge::CvImage cv_img_out_;
 
-		//Camera matrix
-		cv::Mat matrixP_;
-
+		          //Camera matrix
+		          cv::Mat matrixP_;
+		
         //image encoding label
         std::string img_encoding_;
 
